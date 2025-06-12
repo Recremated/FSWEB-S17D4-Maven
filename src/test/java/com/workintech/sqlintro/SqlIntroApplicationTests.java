@@ -62,7 +62,7 @@ class SqlIntroApplicationTests {
 		assertEquals(ogrenciRepository.findStudentsAlphabetically().size(), 10);
 		assertEquals(ogrenciRepository.findStudentsAlphabetically().get(0).getAd(), "Betül");
 		assertEquals(ogrenciRepository.findStudentsAlphabetically()
-				.get(ogrenciRepository.findStudentsAlphabetically().size()-1).getAd(), "Sema");
+				.get(ogrenciRepository.findStudentsAlphabetically().size()-1).getAd(), "İsmail");
 	}
 
 	@DisplayName("10A sınıfındaki öğrencileri okul numarasına göre azalan olarak sıralayınız.")
@@ -86,7 +86,7 @@ class SqlIntroApplicationTests {
 		assertEquals(ogrenciRepository.findElderStudent().getSoyad(), "Emin");
 	}
 
-	@DisplayName("İkinci harfi E olan kitapları listeleyiniz..")
+	@DisplayName("İkinci harfi E olan ogrencileri listeleyiniz..")
 	@Test
 	void findBooksSecondLetterOfNTest(){
 		assertEquals(ogrenciRepository.findStudentsSecondLetterOfN().size(), 5);
